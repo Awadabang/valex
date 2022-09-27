@@ -1,0 +1,62 @@
+{
+  "id": "d1ae9239-96b4-482f-b6e7-62b510c1783e",
+  "brand": "Lenovo",
+  "name": "Thinkpad P1",
+  "cpu": {
+    "brand": "Intel",
+    "name": "Xeon E-2286M",
+    "numberCores": 2,
+    "numberThreads": 7,
+    "minGhz": 2.351579566785011,
+    "maxGhz": 4.762500651288953
+  },
+  "ram": {
+    "value": "13",
+    "unit": "GIGABYTE"
+  },
+  "gpus": [
+    {
+      "brand": "NVIDIA",
+      "name": "RTX 2060",
+      "minGhz": 1.2693160437843152,
+      "maxGhz": 1.4703742680895322,
+      "memory": {
+        "value": "2",
+        "unit": "GIGABYTE"
+      }
+    }
+  ],
+  "storages": [
+    {
+      "driver": "SSD",
+      "memory": {
+        "value": "501",
+        "unit": "GIGABYTE"
+      }
+    },
+    {
+      "driver": "HDD",
+      "memory": {
+        "value": "2",
+        "unit": "TERABYTE"
+      }
+    }
+  ],
+  "screen": {
+    "sizeInch": 22.630983,
+    "resolution": {
+      "width": 5779,
+      "height": 3251
+    },
+    "panel": "OLED",
+    "multitouch": true
+  },
+  "keyboard": {
+    "layout": "QWERTY",
+    "backlit": true
+  },
+  "weightKg": 2.9390128958731103,
+  "priceUsd": 2745.5579862620407,
+  "releaseYear": 2019,
+  "updateAt": "2022-09-26T16:01:55.359114800Z"
+}
