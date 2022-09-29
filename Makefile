@@ -15,3 +15,8 @@ client:
 
 test:
 	go test -cover -race ./...
+
+evans:
+	evans -r repl -p 8080
+
+.PHONY: gen clean server client test evans
