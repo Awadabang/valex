@@ -2,6 +2,8 @@ gen:
 	protoc --proto_path=proto \
 		--go_out=pb --go_opt=paths=source_relative \
 		--go-grpc_out=pb --go-grpc_opt=paths=source_relative \
+		--grpc-gateway_out=pb --grpc-gateway_opt paths=source_relative \
+		--openapiv2_out=swagger --openapiv2_opt logtostderr=true \
 		proto/*.proto 
 
 clean:
@@ -21,6 +23,9 @@ server2-tls:
 
 server:
 	go run cmd/server/main.go -port 8080
+
+rest:
+	go run cmd/server/main.go -port 8081 -type rest -endpoint 0.0.0.0:8080
 
 client:
 	go run cmd/client/main.go -address 0.0.0.0:8080
